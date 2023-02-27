@@ -1,0 +1,133 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+body{
+	background: #AACFCF;
+}
+
+form{
+	background: rgba(27, 31, 34, 0.80);
+	width: 640px;
+	margin: 50px auto;
+	max-width: 97%;
+	border-radius: 4px;
+	padding: 55px 30px;
+}
+
+form .title h2{
+	letter-spacing: 6px;
+	border-bottom: 1px solid white;
+	
+	padding-bottom: 8px;
+	margin-bottom: 32px;
+}
+
+form .half{
+	display: flex;
+	justify-content: space-between;
+}
+
+form .half .item{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 24px;
+	width: 48%;
+}
+
+
+form label{
+	display: block;
+	font-size:  13px;
+	letter-spacing: 3.5px;
+	margin-bottom: 16px;
+}
+
+
+form .half .item input{
+	border-radius: 4px;
+	border: 1px solid white;
+	outline: 0;
+	padding:  16px;
+	width: 100%;
+	height: 44px;
+	background: transparent;
+	font-size: 17px;
+
+}
+
+form .half .item input:hover{
+	border: 2px solid white;
+}
+
+form .messa{
+	margin-bottom: 24px;
+
+}
+
+form .mess textarea{
+	background: transparent;
+	border-radius: 4px;
+	border: 1px solid white;
+	outline: 0;
+	padding: 12px 16px;
+	width: 100%;
+	height: 150px;
+	font-size: 17px;
+}
+
+form .mess textarea:hover{
+	border: 2px solid white;
+}
+
+form .button-area{
+	margin-top: 10px;
+}
+
+form .button-area button{
+	background: #66C6BA;
+	border-radius: 4px;
+	border: 2px solid transparent;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 600;
+	height: 44px;
+	letter-spacing: 3px;
+	outline: 0;
+	padding: 0 20px;
+}
+
+
+form .button-area button:hover{
+	background: white;
+	color: black;
+	
+}
+
+form .button-area button:active{
+	transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+form .half .item input:focus, form .mess textarea:focus, form .button-area input[type="reset"]:hover, form .icons a:hover{
+  background: rgba(255,255,255,0.075);
+}
+
+@media (max-width: 480px){
+	form .half{
+		flex-direction: column;
+	}
+	form .half .item{
+		width: 100%;
+	}
+	form .button-area {
+		display: flex;
+		flex-direction: column;
+	}
+
+}
