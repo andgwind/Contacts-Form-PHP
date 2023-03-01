@@ -102,7 +102,6 @@ form .button-area button{
 	padding: 0 20px;
 }
 
-
 form .button-area button:hover{
 	background: white;
 	color: black;
@@ -112,6 +111,17 @@ form .button-area button:hover{
 form .button-area button:active{
 	transform: scale(0.98);
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+form .button-area span{
+	color: #66C6BA;
+	margin-left: 15px;
+	font-size: 15px;
+	display: none;
+}
+
+form .button-area span:hover{
+	color: gray;
 }
 
 form .half .item input:focus, form .mess textarea:focus, form .button-area input[type="reset"]:hover, form .icons a:hover{
@@ -127,7 +137,6 @@ form .half .item input:focus, form .mess textarea:focus, form .button-area input
 	}
 	form .button-area {
 		display: flex;
-		flex-direction: column;
 	}
 
 }
